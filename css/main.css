@@ -103,6 +103,9 @@
 /*menu*/
 /*background de secciones de portafolio- bloques*/
 /*#1BBDAC*/
+@media screen and (min-width: 318px) and (max-width: 368px) {
+  .titular {
+    font-size: 1em !important; } }
 @media screen and (max-width: 369px) {
   .titular {
     font-size: 1em !important; }
@@ -164,7 +167,7 @@
     height: 35em !important; }
 
   .logo {
-    height: 11em; }
+    height: 11em !important; }
 
   .titular {
     margin-top: 41% !important;

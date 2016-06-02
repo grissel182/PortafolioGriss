@@ -1,5 +1,9 @@
 @import "../files/_variables";
-
+@media screen and (min-width: 318px)and (max-width: 368px) {
+	.titular {
+    font-size: 1em !important;
+}
+}
 @media screen and (max-width: 369px) {
 	.titular {
 		font-size: 1em !important;
@@ -26,7 +30,7 @@
 	    text-decoration: none;
 	    font-size: .8em;
 	}
-	.menu,  {
+	.menu  {
 	    height: 35em !important;
 	}
 	.links li a {
@@ -72,7 +76,7 @@
 	    height: 35em !important;
 	}
 	.logo {
-		height: 11em;
+		height: 11em !important;
 	}
 	.titular {
 	    margin-top: 41% !important;
