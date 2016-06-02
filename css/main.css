@@ -121,17 +121,33 @@
     font-size: 2em !important;
     margin-top: 3% !important; }
 
-  .menu, .logo, .logo {
+  .logo {
     height: 20em !important; }
 
   .links li a {
     color: #000 !important;
     text-decoration: none;
-    font-size: .8em; } }
+    font-size: .8em; }
+
+  .menu, .logo {
+    height: 35em !important; }
+
+  .links li a {
+    font-size: 1em;
+    margin-top: 2em;
+    display: block; } }
 @media screen and (max-width: 767px) {
+  .links li a {
+    font-size: 1em;
+    margin-top: 2em;
+    display: block; }
+
   .navbar-nav li > a:hover, .navbar-nav li > a:focus {
     transform: skewY(0deg) !important;
     /*este solo en media querie*/ }
+  .navbar-nav li > a li {
+    display: block !important;
+    margin-top: 1em; }
   .navbar-nav li > a header ul {
     transform: skewY(0deg) !important; }
   .navbar-nav li > a header .navbar-fixed-top .nav {
@@ -145,7 +161,7 @@
     margin-top: 0em; }
 
   .menu, .logo {
-    height: 15em !important; }
+    height: 35em !important; }
 
   .logo {
     height: 11em; }
@@ -187,15 +203,15 @@
     margin-top: 2em; } }
 /*//PARA LOS MODAS EN PROYECTOS*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .links {
+    margin-left: 0% !important; }
+
   .over .landing {
     height: 530px !important;
     overflow-x: hidden; }
 
   .titular {
     font-size: 2.5em; }
-
-  .links {
-    margin-left: 30%; }
 
   .pleca-1, .pleca-2, .pleca-3 {
     height: 120px !important; }
@@ -362,7 +378,10 @@ body {
       color: #000 !important;
       text-decoration: none; }
       .links li a:hover, .links li a:focus {
-        color: #818297 !important; }
+        color: #818297 !important;
+        border-bottom: 2px solid #28C7A0;
+        border-top: 2px solid #28C7A0;
+        padding: 5px; }
 
 /*boton menu*/
 .hamburger {

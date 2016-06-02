@@ -185,6 +185,9 @@ body {
 			text-decoration: none;
 			&:hover, &:focus {
 				color: #818297 !important;
+				border-bottom: 2px solid $oscuro;
+				border-top: 2px solid $oscuro;
+				padding: 5px;
 			}
 		}
 	}

@@ -18,7 +18,7 @@
 	    font-size: 2em !important;
 	    margin-top: 3% !important;
 	}
-	.menu, .logo {
+	.logo {
 	    height: 20em !important;
 	}
 	.links li a {
@@ -26,13 +26,31 @@
 	    text-decoration: none;
 	    font-size: .8em;
 	}
+	.menu,  {
+	    height: 35em !important;
+	}
+	.links li a {
+	    font-size: 1em;
+	    margin-top: 2em;
+	    display: block;
+	}
+
 }
 
 @media screen and (max-width: 767px) {
+	.links li a {
+	    font-size: 1em;
+	    margin-top: 2em;
+	    display: block;
+	}
 	.navbar-nav li >a {
 		&:hover, &:focus{
 			transform:  skewY(0deg)!important; /*este solo en media querie*/
 		}
+	li {
+		display: block !important;
+		margin-top: 1em;
+	}
 	header {
 		ul {
 			transform: skewY(0deg)!important;
@@ -51,7 +69,7 @@
 		margin-top: 0em;
 	}
 	.menu {
-		height: 15em !important;
+	    height: 35em !important;
 	}
 	.logo {
 		height: 11em;
@@ -100,6 +118,9 @@
 	
 }
 @media screen and (min-width: 768px )and(max-width: 1023px ){
+	.links {
+	    margin-left: 0% !important;
+	}
 	.over {
 		.landing {
 		    height: 530px !important;
@@ -108,9 +129,6 @@
 	}
 	.titular {
 		font-size: 2.5em;
-	}
-	.links {
-		margin-left: 30%;
 	}
 	.pleca-1 {
 		height: 120px !important;
