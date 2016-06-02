@@ -1,0 +1,124 @@
+@import "../files/_variables";
+
+@media screen and (max-width: 369px) {
+	.titular {
+		font-size: 1em !important;
+	}
+	.logo {
+	    height: 10em !important;
+	}
+	.titulos {
+	    font-size: 2em !important;
+	}
+	.text {
+	    font-size: 1em !important;
+	    margin-bottom: 20% !important;
+	}
+	h2 {
+	    font-size: 2em !important;
+	    margin-top: 3% !important;
+	}
+	.menu, .logo {
+	    height: 20em !important;
+	}
+	.links li a {
+	    color: #000 !important;
+	    text-decoration: none;
+	    font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-nav li >a {
+		&:hover, &:focus{
+			transform:  skewY(0deg)!important; /*este solo en media querie*/
+		}
+	header {
+		ul {
+			transform: skewY(0deg)!important;
+		}
+		.navbar-fixed-top .nav {
+			padding-top: 0.1em !important;
+		}
+	}
+	nav {
+		margin-top: -3em !important;
+		padding-top: -1em;
+		}
+	}
+	.nombre {
+		font-size: 3em !important;
+		margin-top: 0em;
+	}
+	.menu {
+		height: 15em !important;
+	}
+	.logo {
+		height: 11em;
+	}
+	.titular {
+	    margin-top: 41% !important;
+	    margin-left: 10%;
+	    font-size: 1.5em !important;
+	    z-index: 20000;
+	}
+	video {
+    	margin-top:95px !important;
+	}
+	.pleca-1, .pleca-2, .pleca-3 {
+	    background-color: white;
+	    height: 100px !important;
+	    transform: skewY(-5deg);
+	    margin-top: -30px !important;
+	}
+	.titulos {
+		font-size: 3em !important;
+	}
+	.pleca-3 {
+	    background-color: #28C7A0;
+	    height: 60px !important;
+	    z-index: -100000;
+	    margin-top: -0px !important;
+	}
+}
+@media screen and (min-width: 1439px ) {
+	nav {
+		margin-top: -9em !important;
+		padding-top: 14em;
+	}
+	.nav {
+    	padding-top: 12em;
+    	padding-bottom: 2em;
+    	margin-top: 4em;
+	}
+	.navbar-brand {
+		margin-top: 2em;
+	}
+}
+/*//PARA LOS MODAS EN PROYECTOS*/
+@media screen and (min-width: 1200px )and(min-width: 1439px ){
+	
+}
+@media screen and (min-width: 768px )and(max-width: 1023px ){
+	.over {
+		.landing {
+		    height: 530px !important;
+		    overflow-x: hidden;
+		}
+	}
+	.titular {
+		font-size: 2.5em;
+	}
+	.links {
+		margin-left: 30%;
+	}
+	.pleca-1 {
+		height: 120px !important;
+	}
+	.titulos {
+		font-size: 4em !important;
+	}
+	.hovereffect .overlay {
+		padding: 10px !important;
+	}
+}

@@ -1,0 +1,506 @@
+/*archivo de recursos - variables , mixins*/
+/*header*/
+/*menu*/
+/*background de secciones de portafolio- bloques*/
+/*#1BBDAC*/
+/*archivo de recursos - variables , mixins*/
+/*header*/
+/*menu*/
+/*background de secciones de portafolio- bloques*/
+/*#1BBDAC*/
+/*archivo de recursos - HOVERS*/
+@import url(../fonts/Brusher-Regular.ttf);
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Grand+Hotel|Sofia|Molle:400italic);
+@import url(https://fonts.googleapis.com/css?family=Belgrano);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900);
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #788E83; }
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  transform: skewY(5deg); }
+
+#design .hovereffect .overlay {
+  transform: skewY(-5deg); }
+
+.hovereffect img {
+  /*  display: block;*/
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.hovereffect:hover img {
+  opacity: 0.2;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 1.5em;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent; }
+
+/*linea de abajo*/
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  font-size: 1em; }
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/*archivo de recursos - variables , mixins*/
+/*header*/
+/*menu*/
+/*background de secciones de portafolio- bloques*/
+/*#1BBDAC*/
+@media screen and (max-width: 369px) {
+  .titular {
+    font-size: 1em !important; }
+
+  .logo {
+    height: 10em !important; }
+
+  .titulos {
+    font-size: 2em !important; }
+
+  .text {
+    font-size: 1em !important;
+    margin-bottom: 20% !important; }
+
+  h2 {
+    font-size: 2em !important;
+    margin-top: 3% !important; }
+
+  .menu, .logo, .logo {
+    height: 20em !important; }
+
+  .links li a {
+    color: #000 !important;
+    text-decoration: none;
+    font-size: .8em; } }
+@media screen and (max-width: 767px) {
+  .navbar-nav li > a:hover, .navbar-nav li > a:focus {
+    transform: skewY(0deg) !important;
+    /*este solo en media querie*/ }
+  .navbar-nav li > a header ul {
+    transform: skewY(0deg) !important; }
+  .navbar-nav li > a header .navbar-fixed-top .nav {
+    padding-top: 0.1em !important; }
+  .navbar-nav li > a nav {
+    margin-top: -3em !important;
+    padding-top: -1em; }
+
+  .nombre {
+    font-size: 3em !important;
+    margin-top: 0em; }
+
+  .menu, .logo {
+    height: 15em !important; }
+
+  .logo {
+    height: 11em; }
+
+  .titular {
+    margin-top: 41% !important;
+    margin-left: 10%;
+    font-size: 1.5em !important;
+    z-index: 20000; }
+
+  video {
+    margin-top: 95px !important; }
+
+  .pleca-1, .pleca-2, .pleca-3, .pleca-2, .pleca-3 {
+    background-color: white;
+    height: 100px !important;
+    transform: skewY(-5deg);
+    margin-top: -30px !important; }
+
+  .titulos {
+    font-size: 3em !important; }
+
+  .pleca-3 {
+    background-color: #28C7A0;
+    height: 60px !important;
+    z-index: -100000;
+    margin-top: -0px !important; } }
+@media screen and (min-width: 1439px) {
+  nav {
+    margin-top: -9em !important;
+    padding-top: 14em; }
+
+  .nav {
+    padding-top: 12em;
+    padding-bottom: 2em;
+    margin-top: 4em; }
+
+  .navbar-brand {
+    margin-top: 2em; } }
+/*//PARA LOS MODAS EN PROYECTOS*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .over .landing {
+    height: 530px !important;
+    overflow-x: hidden; }
+
+  .titular {
+    font-size: 2.5em; }
+
+  .links {
+    margin-left: 30%; }
+
+  .pleca-1, .pleca-2, .pleca-3 {
+    height: 120px !important; }
+
+  .titulos {
+    font-size: 4em !important; }
+
+  .hovereffect .overlay {
+    padding: 10px !important; } }
+* {
+  font-family: 'Work Sans'; }
+
+/*quitar padding de cols, imagenes*/
+.sinpadding [class*="col-"] {
+  padding: 0px !important; }
+
+body {
+  margin: 0 !important; }
+
+/*relleno de menu*/
+.nombre {
+  font-family: 'Brusher-Regular', 'Pacifico', 'Grand', 'Sofia', 'Molle';
+  z-index: 999999;
+  font-size: 7em;
+  position: absolute;
+  top: 10px;
+  left: 25px; }
+
+.text {
+  font-size: 1.15em;
+  margin-bottom: 10%; }
+
+/*seccion de web*/
+#web .textoInclinado, #visual .textoInclinado, #design .textoInclinado, #foto .textoInclinado {
+  transform: 5deg;
+  font-size: 1em; }
+
+/*///////////////////MODAL PANTALLA COMPLETA, CAMBIAR CLASE OVERLAY/////////////////*/
+#User, #Kane, #Inopsye, #Flat, #Fashion, #Gema, #Foto, #Corto, #Brand {
+  z-index: 9999999; }
+
+/* The Overlay (background) */
+.over {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+  .over .w-100 {
+    width: 100%; }
+  .over .landing {
+    height: 702px;
+    overflow-x: hidden; }
+  .over .bg-white {
+    padding: .8% 22% .8%;
+    background-color: white;
+    color: #565454; }
+    .over .bg-white ul {
+      text-decoration: none; }
+      .over .bg-white ul li {
+        list-style: none; }
+  .over .abs {
+    position: relative;
+    z-index: 999999; }
+    .over .abs .git {
+      margin-top: -200px;
+      color: black; }
+  .over .backbco {
+    background-color: white; }
+  .over .sobre {
+    -webkit-filter: opacity(0.2); }
+
+/* Position the content inside the overlay */
+.over-content {
+  position: relative;
+  top: 12%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+  padding-bottom: 7%; }
+
+/* The navigation links inside the overlay */
+.over a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */ }
+
+/* When you mouse over the navigation links, change their color */
+.over a:hover, .over a:focus {
+  color: #393838; }
+
+/* Position the close button (top right corner) */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px !important;
+  /* Override the font-size specified earlier (36px) for all navigation links */ }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .over a {
+    font-size: 20px; }
+
+  .closebtn {
+    font-size: 40px !important;
+    top: 15px;
+    right: 35px; } }
+/*mi code*/
+#detalle .temporal {
+  width: 100%;
+  height: 300px;
+  background-color: white; }
+
+/*///////////////////////////END OF MODAL COMPLETO/////////////*/
+.menu, .logo {
+  background-color: #FEB88E;
+  height: 17em;
+  width: 100%;
+  z-index: 8000;
+  position: fixed;
+  top: -100px;
+  transform: skewY(-5deg); }
+
+.logo {
+  position: absolute !important;
+  background-color: white;
+  height: 250;
+  top: -100; }
+
+/*elementos menu*/
+.links {
+  display: inline-block;
+  text-align: left;
+  margin-top: 13em;
+  /*transform:  skewY($inclinacionup);*/ }
+  .links li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0 1em; }
+    .links li a {
+      color: #000 !important;
+      text-decoration: none; }
+      .links li a:hover, .links li a:focus {
+        color: #818297 !important; }
+
+/*boton menu*/
+.hamburger {
+  z-index: 90000;
+  position: fixed !important; }
+
+.titular {
+  vertical-align: middle;
+  text-align: left;
+  margin-top: 24%;
+  margin-left: 10%;
+  position: absolute;
+  font-size: 3em;
+  z-index: 20000;
+  color: white;
+  font-family: 'Belgrano'; }
+  .titular #texto, .titular p {
+    font-family: 'Belgrano'; }
+
+video {
+  margin-top: 48px;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%); }
+
+.progress-bar-info {
+  background-color: #FEB88E; }
+
+/*pleca after para el video*/
+.pleca-1, .pleca-2, .pleca-3 {
+  background-color: white;
+  height: 220px;
+  transform: skewY(-5deg);
+  margin-top: -70px; }
+
+.pleca-2 {
+  margin-top: 0;
+  background-image: url(../img/poster.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pleca-3 {
+  background-color: #28C7A0;
+  height: 130px;
+  z-index: -100000;
+  margin-top: -40px; }
+
+/*skills*/
+h1 {
+  font-size: 3em;
+  font-family: 'Belgrano'; }
+
+h2 {
+  font-size: 3em;
+  margin-top: 3%; }
+
+.titulos {
+  font-size: 5em;
+  padding-bottom: 0; }
+
+.progress {
+  margin: 1em 0; }
+
+img {
+  width: 100%; }
+
+#skills {
+  margin: -10% 0 10%;
+  font-size: 1em; }
+  #skills .lightColor {
+    color: #CACACA; }
+  #skills .line, #skills .line-1 {
+    width: 100%;
+    height: 4px;
+    background-color: #50bf94;
+    margin: 3.5em 0; }
+  #skills .line-1 {
+    width: 65%; }
+
+.negro {
+  color: #50bf94 !important; }
+
+#why {
+  background-color: #28C7A0;
+  margin-top: -5%;
+  color: white; }
+  #why .line, #why #skills .line-1, #skills #why .line-1, #why #contacto .line-1, #contacto #why .line-1 {
+    width: 100%;
+    height: 4px;
+    background-color: #FEB88E;
+    margin: 3.5em 0; }
+
+#contacto {
+  color: white; }
+  #contacto .line-1 {
+    width: 65%; }
+  #contacto .icons {
+    margin-top: 4%; }
+    #contacto .icons a {
+      text-decoration: none;
+      color: white; }
+      #contacto .icons a:hover, #contacto .icons a:focus {
+        color: white; }
+
+.mt-5 {
+  margin-top: 3%; }
+
+.mt-10 {
+  margin-top: 10%; }
+
+.mb-10 {
+  margin-bottom: 7%; }
+
+/*portfolio*/
+#web, #visual, #design, #foto {
+  background-color: white;
+  padding: 1em 0 4em;
+  transform: skewY(-5deg); }
+  #web .title, #visual .title, #design .title, #foto .title {
+    padding: 2em 0; }
+  #web .overlay a, #visual .overlay a, #design .overlay a, #foto .overlay a {
+    margin-top: 2em; }
+
+#space {
+  height: 6rem; }
+
+.dosem {
+  font-size: 1.4em; }
+
+.comillas {
+  font-size: 4em; }
+
+#design {
+  transform: skewY(5deg); }
+
+footer {
+  background-color: #5B5B5B;
+  color: #E4E1E1;
+  padding: 10px 0; }
+
+/*# sourceMappingURL=main.css.map */
