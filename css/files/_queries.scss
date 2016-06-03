@@ -18,7 +18,7 @@
 	    font-size: 2em !important;
 	    margin-top: 3% !important;
 	}
-	.menu, .logo {
+	.menu {
 	    height: 20em !important;
 	}
 	.links li a {
@@ -29,6 +29,9 @@
 }
 
 @media screen and (max-width: 767px) {
+	.links li {
+	    margin: .5em 1em !important;
+	}
 	.navbar-nav li >a {
 		&:hover, &:focus{
 			transform:  skewY(0deg)!important; /*este solo en media querie*/
@@ -50,9 +53,15 @@
 		font-size: 3em !important;
 		margin-top: 0em;
 	}
-	.menu {
-		height: 15em !important;
+	li { 
+	margin: 1em 0;
 	}
+	a {
+		margin: 2em 0;
+	}
+	.menu {
+    height: 22em !important;
+}
 	.logo {
 		height: 11em;
 	}
@@ -121,4 +130,7 @@
 	.hovereffect .overlay {
 		padding: 10px !important;
 	}
+	.links li {
+    margin: .5em 1em;
+}
 }
