@@ -1,6 +1,6 @@
 @import "../files/_variables";
 
-@media screen and (max-width: 369px) {
+@media screen and (max-width: 365px) {
 	.titular {
 		font-size: 1em !important;
 	}
@@ -28,7 +28,8 @@
 	}
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen  and (max-width: 767px) {
 	.links li {
 	    margin: .5em 1em !important;
 	}
@@ -61,18 +62,20 @@
 	}
 	.menu {
     height: 22em !important;
+    width: 60% !important;
+    z-index: 22000;
 }
 	.logo {
-		height: 11em;
+		height: 13em !important;
 	}
 	.titular {
-	    margin-top: 41% !important;
+	    margin-top: 26% !important;
 	    margin-left: 10%;
 	    font-size: 1.5em !important;
 	    z-index: 20000;
 	}
 	video {
-    	margin-top:95px !important;
+    	margin-top:30px !important;
 	}
 	.pleca-1, .pleca-2, .pleca-3 {
 	    background-color: white;
@@ -88,6 +91,24 @@
 	    height: 60px !important;
 	    z-index: -100000;
 	    margin-top: -0px !important;
+	}
+}
+@media screen  and (max-width: 400px) {
+	.titular {
+		font-size: 1em !important;
+		margin-top: 36% !important;
+	}
+	video {
+	    margin-top: 50px !important;
+	}
+	.titulos {
+	    font-size: 2em !important;
+	}
+	.pleca-1,  .pleca-3  {
+	    height: 50px !important;
+	}
+	.pleca-2 {
+		height: 110px !important;
 	}
 }
 @media screen and (min-width: 1439px ) {
@@ -118,9 +139,9 @@
 	.titular {
 		font-size: 2.5em;
 	}
-	.links {
+	/*.links {
 		margin-left: 30%;
-	}
+	}*/
 	.pleca-1 {
 		height: 120px !important;
 	}

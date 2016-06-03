@@ -103,7 +103,7 @@
 /*menu*/
 /*background de secciones de portafolio- bloques*/
 /*#1BBDAC*/
-@media screen and (max-width: 369px) {
+@media screen and (max-width: 365px) {
   .titular {
     font-size: 1em !important; }
 
@@ -154,19 +154,21 @@
     margin: 2em 0; }
 
   .menu {
-    height: 22em !important; }
+    height: 22em !important;
+    width: 60% !important;
+    z-index: 22000; }
 
   .logo {
-    height: 11em; }
+    height: 13em !important; }
 
   .titular {
-    margin-top: 41% !important;
+    margin-top: 26% !important;
     margin-left: 10%;
     font-size: 1.5em !important;
     z-index: 20000; }
 
   video {
-    margin-top: 95px !important; }
+    margin-top: 30px !important; }
 
   .pleca-1, .pleca-2, .pleca-3, .pleca-2, .pleca-3 {
     background-color: white;
@@ -182,6 +184,22 @@
     height: 60px !important;
     z-index: -100000;
     margin-top: -0px !important; } }
+@media screen and (max-width: 400px) {
+  .titular {
+    font-size: 1em !important;
+    margin-top: 36% !important; }
+
+  video {
+    margin-top: 50px !important; }
+
+  .titulos {
+    font-size: 2em !important; }
+
+  .pleca-1, .pleca-2, .pleca-3, .pleca-3 {
+    height: 50px !important; }
+
+  .pleca-2 {
+    height: 110px !important; } }
 @media screen and (min-width: 1439px) {
   nav {
     margin-top: -9em !important;
@@ -203,9 +221,9 @@
   .titular {
     font-size: 2.5em; }
 
-  .links {
-    margin-left: 30%; }
-
+  /*.links {
+  	margin-left: 30%;
+  }*/
   .pleca-1, .pleca-2, .pleca-3 {
     height: 120px !important; }
 
@@ -217,6 +235,11 @@
 
   .links li {
     margin: .5em 1em; } }
+@font-face {
+  font-family: 'Brusher';
+  src: url("original_Brusher-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Brusher.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   font-family: 'Work Sans'; }
 
@@ -229,7 +252,7 @@ body {
 
 /*relleno de menu*/
 .nombre {
-  font-family: 'Brusher-Regular', 'Pacifico', 'Grand', 'Sofia', 'Molle';
+  font-family: 'Brusher', 'Pacifico', 'Grand', 'Sofia', 'Molle';
   z-index: 999999;
   font-size: 7em;
   position: absolute;
@@ -344,36 +367,46 @@ body {
   background-color: white; }
 
 /*///////////////////////////END OF MODAL COMPLETO/////////////*/
-.menu {
-  background-color: #FEB88E;
-  height: 19em;
-  width: 100%;
-  z-index: 8000;
-  position: fixed;
-  top: -100px;
-  transform: skewY(-5deg); }
-
+/*.menu {
+	background-color: $menuColor;
+	height: 19em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+	width: 100%;
+	z-index: 8000;
+	position: fixed;
+	top: -100px;
+	transform:  skewY($inclinaciondown);
+}*/
 .logo {
   background-color: #FEB88E;
   position: absolute !important;
   background-color: white;
   height: 17em;
-  top: -100;
+  top: -100px;
   transform: skewY(-5deg);
   width: 100%;
   z-index: 8000; }
 
+/*prueba menu*/
+.menu {
+  background-color: #FEB88E;
+  height: 25em;
+  width: 30%;
+  z-index: 22000;
+  position: fixed;
+  top: -50px;
+  right: 0;
+  transform: skewY(-5deg); }
+
 /*elementos menu*/
 .links {
-  display: inline-block;
   text-align: left;
-  margin-top: 13em;
+  margin-top: 8em;
   /*transform:  skewY($inclinacionup);*/ }
   .links li {
     list-style: none;
-    display: inline-block;
+    display: block;
     font-size: 1.3em;
-    margin: 0 1em; }
+    margin: 1em; }
     .links li a {
       color: #000 !important;
       text-decoration: none; }

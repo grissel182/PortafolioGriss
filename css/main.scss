@@ -7,6 +7,15 @@
 @import url(https://fonts.googleapis.com/css?family=Belgrano);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900);
 
+
+@font-face {
+	font-family: 'Brusher';
+    src: url('original_Brusher-Regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Brusher.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 *{
 	font-family: 'Work Sans';
 
@@ -20,7 +29,7 @@ body {
 }
 /*relleno de menu*/
 .nombre {
-	font-family: 'Brusher-Regular', 'Pacifico', 'Grand', 'Sofia', 'Molle';
+	font-family: 'Brusher', 'Pacifico', 'Grand', 'Sofia', 'Molle';
 	z-index: 999999;
 	font-size: 7em;
 	position: absolute;
@@ -150,7 +159,7 @@ body {
 /*///////////////////////////END OF MODAL COMPLETO/////////////*/
 
 
-.menu {
+/*.menu {
 	background-color: $menuColor;
 	height: 19em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
 	width: 100%;
@@ -158,32 +167,40 @@ body {
 	position: fixed;
 	top: -100px;
 	transform:  skewY($inclinaciondown);
-}
+}*/
 
 .logo{
 	background-color: $menuColor;
 	position: absolute !important;
 	background-color: $baseColor;
 	height: 17em;
-	top: -100;
+	top: -100px;
 	transform:  skewY($inclinaciondown);
 	width: 100%;
 	z-index: 8000;
 }
-
-
+/*prueba menu*/
+.menu {
+	background-color: $menuColor;
+	height: 25em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+	width: 30%;
+	z-index: 22000;
+	position: fixed;
+	top: -50px;
+	right: 0;
+	transform:  skewY($inclinaciondown);
+}
 
 /*elementos menu*/
 .links {
-	display: inline-block;
 	text-align: left;
-	margin-top: 13em;
+	margin-top: 8em;
 	/*transform:  skewY($inclinacionup);*/
 	li {
 		list-style: none;
-		display: inline-block;
+		display: block;
 		font-size: 1.3em;
-		margin: 0 1em;
+		margin: 1em;
 		a {
 			color: #000 !important;
 			text-decoration: none;
