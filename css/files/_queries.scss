@@ -58,7 +58,10 @@
 	margin: 1em 0;
 	}
 	a {
-		margin: 2em 0;
+		margin: 0em 0;
+	}
+	a .closebtn{
+		margin: 0em !important;
 	}
 	.menu {
     height: 22em !important;
@@ -92,6 +95,9 @@
 	    z-index: -100000;
 	    margin-top: -0px !important;
 	}
+		.text {
+		font-size: 1em !important;
+	}
 }
 @media screen  and (max-width: 400px) {
 	.titular {
@@ -109,6 +115,15 @@
 	}
 	.pleca-2 {
 		height: 110px !important;
+	}
+	.text {
+		font-size: 1em !important;
+	}
+	.line, .line-1 {
+	    margin: 2em 0;
+	}
+	.hovereffect .overlay {
+		padding: 10px 5px;
 	}
 }
 @media screen and (min-width: 1439px ) {
@@ -129,7 +144,7 @@
 @media screen and (min-width: 1200px )and(min-width: 1439px ){
 	
 }
-@media screen and (min-width: 768px )and(max-width: 1023px ){
+@media screen and (min-width: 768px )and(max-width: 1024px ){
 	.over {
 		.landing {
 		    height: 530px !important;
@@ -152,6 +167,18 @@
 		padding: 10px !important;
 	}
 	.links li {
-    margin: .5em 1em;
-}
+	    margin: .5em 1em;
+	}
+	.line {
+	    margin: 2em 0 !important;
+	}
+	.line-1 {
+	    margin: 2em 0 !important;
+	}
+	.hovereffect .overlay {
+		padding: 2px !important;
+	}
+	a .closebtn{
+		margin: 0em !important;
+	}
 }

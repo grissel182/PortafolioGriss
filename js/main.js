@@ -132,7 +132,7 @@ var desplegarTexto = function() {
       // ID TEXTO EN HTML PARA COLOCAR
       $('#texto').append(frase[i]);
       i++;
-      setTimeout(ponerLetra, 150);
+      setTimeout(ponerLetra, 140);
     } else {
       $('#texto').text('');
       desplegarTexto();
@@ -148,7 +148,7 @@ var desplegarTexto = function() {
 
   if (frases.length > 0) {
     frases.splice(index, 2);  
-    setTimeout(ponerLetra, 400);
+    setTimeout(ponerLetra, 310);
   } else {
     console.log('.......');
     //Copiar el arreglo original en el arreglo frases

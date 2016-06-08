@@ -4,6 +4,7 @@
 		<title>Grissel Coutiño</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <link rel="icon" href="img/g.png">
 		<!-- FONTS-->
     	<link href='fonts/Brusher-Regular.ttf' rel='stylesheet' type='text/css'>  
         <link href='https://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
@@ -15,7 +16,7 @@
     	<!-- Bootstrap -->
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 		<!-- WOW EFECTOS -->
-        <link rel="stylesheet" href="css/animate.min.css" type="text/css">  
+        <link rel="stylesheet" href="css/animate.min.css" type="text/css">
         <!-- STYLES  -->
 	    <link rel="stylesheet" href="css/main.css" type="text/css">
         <!-- menu -->
@@ -23,7 +24,7 @@
         <!-- script menu  -->
         <!-- END -->
 	</head>
-	<body>
+	<body id="page-top" data-spy="scroll">
         <section id="up">
             <div class="logo"> 
                                    
@@ -35,19 +36,22 @@
                     <center>
                         <ul class="links">
                             <li class="btn-1">
-                                <a href="#quehago">¿Que hago?</a>
+                                <a class="page-scroll" href="#page-top">¿Quién soy?</a>
                             </li>
                             <li class="btn-1">
-                                <a href="#como">¿Cómo?</a>
+                                <a class="page-scroll" href="#quehago">¿Qué hago?</a>
                             </li>
                             <li class="btn-1">
-                                <a href="#porque">¿Por qué?</a>
+                                <a class="page-scroll" href="#como">¿Cómo?</a>
                             </li>
                             <li class="btn-1">
-                                <a href="#proyectos">Proyectos</a>
+                                <a class="page-scroll" href="#porque">¿Por qué?</a>
                             </li>
                             <li class="btn-1">
-                                <a href="#contacto">Contacto</a>
+                                <a  class="page-scroll" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li class="btn-1">
+                                <a class="page-scroll" href="#contacto">Contacto</a>
                             </li>
                         </ul>
                     </center>
@@ -67,9 +71,20 @@
                 <!-- checar porque deja padding :( -->
                     <div class="col-xs-12 text-left">
                         <center>
-                        <div class="titular ">Comprometida, persistente, <br>dueña de una sincera sonrisa, <br>soy  <span id="texto"></span></p></div>
+                        <div class="titular ">Comprometida, persistente, <br>dueña de una sincera sonrisa y <br>soy  <span id="texto"></span></p></div>
                         </center>
-                        <video src="img/griss.mp4" autoplay loop poster="img/poster.png"></video>
+                         <!-- <center> -->
+                        <!-- div class="titularCont">
+                          <p class="tres">SOY</p>
+                          <span class="titular">
+                            <p><span id="texto"></span></p>
+                            <p><span id="texto"></span></p>
+                            <p><span id="texto"></span></p>
+                          </span>
+                        </div> -->
+                        <!-- <div class="titular ">Comprometida, persistente, <br>dueña de una sincera sonrisa, <br>soy  <span id="texto"></span></p></div> -->
+                        <!-- </center> -->
+                        <video src="img/griss.mp4" autoplay loop poster="img/poster.jpg"></video>
                     </div>
                 </div>
             </div>
@@ -119,7 +134,7 @@
                        </div><div class="line-1"></div>
                        <div class="row mb-10">
                            <div class="col-sm-6 col-sm-offset-4">
-                               <p>Pienso en la manera más factible de realizar el proyecto en cuestión. <br>
+                               <p class="text">Pienso en la manera más factible de realizar el proyecto en cuestión. <br>
                                 Boceto, boceto y  boceto las veces que sean necesarias: Mayor planeación, mejores resultados.<br>
                                 Cuando la idea está definida, hago uso  de las herramientas tecnológicas para su realización.<br>
                                 <br>
@@ -310,7 +325,7 @@
                         <div class="col-sm-12">
                             <div class="row">
                                 <div class="col-sm-6 col-sm-offset-2"> 
-                                    <p class="text">Todo requiere una planeación y estructura, ser propositivo e innovador son la clave del éxito.<br>La creatividad es el ingrediente secreto que puedo aportar para hacer de una idea una realidad.<br>
+                                    <p class="text">Todo requiere una planeación y estructura, ser propositiva e innovadora son la clave del éxito.<br>La creatividad es el ingrediente secreto que puedo aportar para hacer de una idea una realidad.<br>
                                     <br>Conoce algunos de mis proyectos:
                                     </p>
                                 </div>
@@ -341,9 +356,12 @@
                         <div class="hovereffect">
                             <img src="img/web/webKane5.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>DESARROLLO WEB</h2>
-                                <p>Maquetación HTML y CSS del proyecto : <br>Kane Theme</p>
-                                <a onclick="openKane()">Ver más</a> 
+                                <div class="bg-titulo">
+                                  <h2>KANE THEME</h2>
+                                </div>
+                                <p>Maquetación HTML y CSS del proyecto. Incorporacíón de Bootstrap y Sass</p>
+                                <br>                                
+                                <a onclick="openKane()" class="more">Ver más</a> 
                             </div>
                         </div>
                     </div>
@@ -354,9 +372,12 @@
                         <div class="hovereffect">
                             <img src="img/web/webUser4.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>DESARROLLO WEB</h2>
-                                <p>Maquetación HTML y CSS del proyecto : <br> 360* USER Testing</p>
-                                <a onclick="openUser()">Ver más</a> 
+                                <div class="bg-titulo">
+                                  <h2>360* USER Testing</h2>
+                                </div>
+                                <p>Maquetación HTML y CSS del proyecto. Incorporacíón de Bootstrap.</p>
+                                <br>
+                                <a onclick="openUser()" class="more">Ver más</a> 
                             </div>
                         </div>
                     </div>
@@ -367,24 +388,31 @@
                         <div class="hovereffect">
                             <img src="img/web/webInopsye3.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>WORDPRESS</h2>
-                                <p>Adaptación de Wordpress Theme para : <br> Inopsye UK</p>
-                                <a onclick="openInopsye()">Ver más</a>                            </div>
+                                <div class="bg-titulo">
+                                  <h2>INOPSYE</h2>
+                                </div>
+                                <p>Diseño web y adaptación en Wordpress para INOPSYE</p>
+                                <br>
+                                <a onclick="openInopsye()" class="more">Ver más</a>                           
+                               </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- END OF ROW -->            
-            <div class="row mt-5">
+            <div class="row mt-5 hidden-xs">
                 <!-- IMAGE -->
                 <div class="col-sm-4">
                     <div class="imagen">
                         <div class="hovereffect">
                             <img src="img/web/webGema4.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>DESARROLLO WEB</h2>
-                                <p>Maquetación HTML y CSS del proyecto : <br> Fundación Gema A.C</p>
-                                <a onclick="openGema()">Ver más</a>
+                                <div class="bg-titulo">
+                                  <h2>Fundación Gema A.C</h2>
+                                </div>
+                                <p>Maquetación HTML y CSS del proyecto, incorporación de Bootstrap</p>
+                                <br>
+                                <a onclick="openGema()" class="more">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -395,9 +423,12 @@
                         <div class="hovereffect">
                             <img src="img/web/webFlat5.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>DESARROLLO WEB</h2>
-                                <p>Maquetación HTML y CSS del proyecto : <br> Flat Theme</p>
-                                <a onclick="openFlat()">Ver más</a>
+                                <div class="bg-titulo">
+                                  <h2>Flat Theme</h2>
+                                </div>
+                                <p>Maquetación HTML y CSS del proyecto, incorporación de Bootstrap</p>
+                                <br>
+                                <a onclick="openFlat()" class="more">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -408,9 +439,12 @@
                         <div class="hovereffect">
                             <img src="img/web/webFashion3.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>DESARROLLO WEB</h2>
-                                <p>Maquetación HTML y CSS del proyecto : <br> Fashion Accesories</p>
-                                <a onclick="openFashion()">Ver más</a>
+                                <div class="bg-titulo">
+                                  <h2>Fashion Accesories</h2>
+                                </div>
+                                <p>Maquetación HTML y CSS del proyecto <span class="hidden-xs">, preview de tienda online, uso de Bootstrap y SASS / SCSS</span></p>
+                                <br>
+                                <a onclick="openFashion()" class="more">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -442,9 +476,12 @@
                         <div class="hovereffect">
                             <img src="img/benusta.png" alt="" class="image">
                             <div class="overlay">
-                                <h2>Identidad Gráfica</h2>
-                                <p>Creación de Branding para : <br> Benusta Recintos, Iakun Energy y Samurai Game</p>
-                                <a onclick="openBrand()">Ver más</a> 
+                                <div class="bg-titulo">
+                                  <h2>Identidad Gráfica</h2>
+                                </div>
+                                <p>Creación de Branding <span class="hidden-xs"> para : <br> Benusta Recintos, Iakun Energy y Samurai Game</span></p>
+                                <br>
+                                <a onclick="openBrand()" class="more">Ver más</a> 
                             </div>
                         </div>
                     </div>
@@ -455,9 +492,12 @@
                         <div class="hovereffect">
                             <img src="img/desvanece.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>Audiovisual</h2>
-                                <p>Cortometraje de temática surrealista: <br> Yo desvanece</p>
-                                <a onclick="openCorto()">Ver más</a> 
+                                <div class="bg-titulo">
+                                  <h2>Audiovisual</h2>
+                                </div>
+                                <p>Cortometraje <span class="hidden-xs">de temática surrealista: <br> </span> Yo desvanece</p>
+                                <br>
+                                <a onclick="openCorto()" class="more">Ver más</a> 
                             </div>
                         </div>
                     </div>
@@ -468,9 +508,12 @@
                         <div class="hovereffect">
                             <img src="img/black.jpg" alt="" class="image">
                             <div class="overlay">
-                                <h2>Fotografía</h2>
-                                <p>Fotografía de conciertos colaboraciones con : <br> Revista Kuadro</p>
-                                <a onclick="openFoto()">Ver más</a> 
+                                <div class="bg-titulo">
+                                  <h2>Fotografía</h2>
+                                </div>
+                                <p>Fotografía de conciertos <span class="hidden-xs"> colaboraciones con : <br> Revista Kuadro</span> </p>
+                                <br>
+                                <a onclick="openFoto()" class="more">Ver más</a> 
                             </div>
                         </div>
                     </div>
@@ -489,11 +532,11 @@
            </div>
            <div class="line-1"></div>
            <div class="row">
-               <div class="col-sm-8 col-md-offset-4">
-                   <p>Si te interesa mi trabajo o tienes algún comentario, no dudes en comunicarte conmigo :) </p>
+               <div class="col-sm-6 col-md-offset-4">
+                   <p class="text">Si te interesa mi trabajo o tienes algún comentario, no dudes en comunicarte conmigo :) </p>
                </div>
            </div>
-           <div class="row">
+           <!-- <div class="row">
                <div class="col-sm-8 col-md-offset-4">
                    <i class="fa fa-envelope" aria-hidden="true"></i> <span>grissel182@gmail.com</span>
                </div>
@@ -502,12 +545,14 @@
                <div class="col-sm-8 col-md-offset-4">
                    <i class="fa fa-phone-square " aria-hidden="true"></i> <span>044 55 3813 5389</span>
                </div>
-           </div>
+           </div> -->
            <div class="row icons">
                <div class="col-sm-8 col-md-offset-4">
-                   <a href="http://github.com/grissel182" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
-                   <a href="http://linkedin.com/grissel182" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
-                   <a href="http://twitter.com/grissel182" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+                   <a href="http://github.com/grissel182" target="_blank" class="ml"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+                   <a href="http://www.linkedin.com/in/grissel" target="_blank" class="ml"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+                   <a href="tel:+52(55)38135389" class="ml"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a>
+                   <a href="mailto:grissel182@gmail.com" target="_blank"><i class="fa fa-envelope fa-4x" aria-hidden="true" class="ml"></i></a>
+                   
                </div>
            </div>
         </div>
@@ -936,6 +981,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
     
     <script>
