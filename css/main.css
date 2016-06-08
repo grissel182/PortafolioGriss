@@ -278,9 +278,6 @@ html {
 * {
   font-family: 'Work Sans'; }
 
-/*p {
-	font-size: 2.5em;
-}*/
 /*quitar padding de cols, imagenes*/
 .sinpadding [class*="col-"] {
   padding: 0px !important; }
@@ -309,10 +306,6 @@ body {
   transform: 5deg;
   font-size: 1em; }
 
-/*.bg-titulo {
-	background-color: rgba(0, 9, 25, 0.2);
-	padding: 5px;
-}*/
 /*///////////////////MODAL PANTALLA COMPLETA, CAMBIAR CLASE OVERLAY/////////////////*/
 #User, #Kane, #Inopsye, #Flat, #Fashion, #Gema, #Foto, #Corto, #Brand {
   z-index: 9999999; }
@@ -417,15 +410,6 @@ body {
   background-color: white; }
 
 /*///////////////////////////END OF MODAL COMPLETO/////////////*/
-/*.menu {
-	background-color: $menuColor;
-	height: 19em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
-	width: 100%;
-	z-index: 8000;
-	position: fixed;
-	top: -100px;
-	transform:  skewY($inclinaciondown);
-}*/
 .logo {
   background-color: #FEB88E;
   position: absolute !important;
@@ -484,35 +468,6 @@ body {
   .titular #texto, .titular p {
     font-family: 'Belgrano'; }
 
-/*.tres {
-	margin-left: 10%;
-	font-size: 12em;
-	z-index: 20000;
-	color: white;
-	opacity: .2;
-	margin-top: 24%;
-	position: absolute;
-	font-family: 'Belgrano';
-}*/
-/*.soy {
-	font-size: 6em;
-	font-family: 'Belgrano';
-}
-.titular{
-	vertical-align: middle;
-	text-align: left;
-	margin-top: 24%;
-	margin-left: 0%;
-	position: absolute;
-	font-size: 3em;
-	z-index: 20000;
-	color: white;	
-	font-family: 'Belgrano';
-	#texto, p {
-		font-family: 'Belgrano';
-		font-size: 1em;
-	}
-}*/
 video {
   margin-top: 48px;
   -webkit-filter: brightness(50%);
@@ -579,9 +534,7 @@ img {
 #why {
   background-color: #28C7A0;
   margin-top: -5%;
-  color: white;
-  /*	.contain{
-  }*/ }
+  color: white; }
   #why .line, #why #skills .line-1, #skills #why .line-1, #why #contacto .line-1, #contacto #why .line-1 {
     width: 100%;
     height: 4px;

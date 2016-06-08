@@ -1,5 +1,3 @@
-
-
 // para menu hamburguesa
 
 var $hamburger = $(".hamburger");
@@ -9,10 +7,6 @@ var $hamburger = $(".hamburger");
     $('#nav').slideToggle("slow");
     $('.btn-1').slideToggle(600);
   });
-
-
-
-
 
 /* Open when someone clicks on the span element */
 function openUser() {

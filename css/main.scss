@@ -6,8 +6,6 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico|Grand+Hotel|Sofia|Molle:400italic);
 @import url(https://fonts.googleapis.com/css?family=Belgrano);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900);
-
-
 @font-face {
 	font-family: 'Brusher';
     src: url('original_Brusher-Regular.eot?#iefix') format('embedded-opentype'), 
@@ -19,18 +17,13 @@ body {
     width: 100%;
     height: 100%;
 }
-
 html {
     width: 100%;
     height: 100%;
 }
 *{
 	font-family: 'Work Sans';
-
 }
-/*p {
-	font-size: 2.5em;
-}*/
 /*quitar padding de cols, imagenes*/
 .sinpadding [class*="col-"] {
     padding: 0px !important;
@@ -54,8 +47,6 @@ body {
 .ml {
 	margin-right: .5em;
 }
-
-
 /*seccion de web*/
 #web {
 	.textoInclinado {
@@ -63,17 +54,10 @@ body {
 		font-size: 1em;
 	}
 }
-/*.bg-titulo {
-	background-color: rgba(0, 9, 25, 0.2);
-	padding: 5px;
-}*/
-
 /*///////////////////MODAL PANTALLA COMPLETA, CAMBIAR CLASE OVERLAY/////////////////*/
-
 #User, #Kane, #Inopsye, #Flat, #Fashion, #Gema, #Foto, #Corto, #Brand{
 	z-index: 9999999;
 }
-
 /* The Overlay (background) */
 .over {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */    
@@ -121,7 +105,6 @@ body {
 		-webkit-filter: opacity(0.2);
 	}
 }
-
 /* Position the content inside the overlay */
 .over-content {
     position: relative;
@@ -131,7 +114,6 @@ body {
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 	padding-bottom: 7%;
 }
-
 /* The navigation links inside the overlay */
 .over a {
     padding: 8px;
@@ -141,12 +123,10 @@ body {
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
-
 /* When you mouse over the navigation links, change their color */
 .over a:hover, .over a:focus {
     color: #393838;
 }
-
 /* Position the close button (top right corner) */
 .closebtn {
     position: absolute;
@@ -155,7 +135,6 @@ body {
     right: 45px;
     font-size: 60px !important; /* Override the font-size specified earlier (36px) for all navigation links */
 }
-
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .over a {font-size: 20px}
@@ -169,7 +148,6 @@ body {
     	margin-top: 5px !important;
     }
 }
-
 /*mi code*/
 #detalle {
 	.temporal {
@@ -179,18 +157,6 @@ body {
 	}
 }
 /*///////////////////////////END OF MODAL COMPLETO/////////////*/
-
-
-/*.menu {
-	background-color: $menuColor;
-	height: 19em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
-	width: 100%;
-	z-index: 8000;
-	position: fixed;
-	top: -100px;
-	transform:  skewY($inclinaciondown);
-}*/
-
 .logo{
 	background-color: $menuColor;
 	position: absolute !important;
@@ -212,7 +178,6 @@ body {
 	right: 0;
 	transform:  skewY($inclinaciondown);
 }
-
 /*elementos menu*/
 .links {
 	text-align: left;
@@ -255,37 +220,6 @@ body {
 		font-family: 'Belgrano';
 	}
 }
-
-/*.tres {
-	margin-left: 10%;
-	font-size: 12em;
-	z-index: 20000;
-	color: white;
-	opacity: .2;
-	margin-top: 24%;
-	position: absolute;
-	font-family: 'Belgrano';
-}*/
-/*.soy {
-	font-size: 6em;
-	font-family: 'Belgrano';
-}
-.titular{
-	vertical-align: middle;
-	text-align: left;
-	margin-top: 24%;
-	margin-left: 0%;
-	position: absolute;
-	font-size: 3em;
-	z-index: 20000;
-	color: white;	
-	font-family: 'Belgrano';
-	#texto, p {
-		font-family: 'Belgrano';
-		font-size: 1em;
-	}
-}*/
-
 video {
 	margin-top: 48px;
 	-webkit-filter: brightness(50%);
@@ -296,8 +230,6 @@ video {
 .progress-bar-info {
 	background-color: #FEB88E;
 }
-
-
 /*pleca after para el video*/
 .pleca-1{
 	background-color:$pleca;
@@ -321,7 +253,6 @@ video {
 	z-index: -100000;
 	margin-top: -40px;
 }
-
 /*skills*/
 h1 {
 	font-size: 3em;
@@ -335,11 +266,9 @@ h2 {
 	font-size: 4em;
 	padding-bottom: 0;
 }
-
 .progress {
 	margin: 1em 0;
 }
-
 img {
 	width: 100%;
 }
@@ -373,8 +302,6 @@ img {
 		background-color:$linea;
 		margin: 3.5em 0;
 	}
-/*	.contain{
-}*/
 }
 .more{
 	font-size: 1.25em !important;
@@ -422,10 +349,10 @@ img {
  		margin-top: 2em;
  	}
 
- }
- #visual {
- 	@extend #web;
- }
+}
+#visual {
+	@extend #web;
+}
 
 #space {
 	height: 6rem;
