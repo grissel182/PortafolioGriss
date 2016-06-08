@@ -126,7 +126,7 @@ var desplegarTexto = function() {
       // ID TEXTO EN HTML PARA COLOCAR
       $('#texto').append(frase[i]);
       i++;
-      setTimeout(ponerLetra, 140);
+      setTimeout(ponerLetra, 120);
     } else {
       $('#texto').text('');
       desplegarTexto();
