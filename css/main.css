@@ -616,4 +616,9 @@ footer {
   margin-left: 44%;
   border-color: #FEB88E; }
 
+.grey {
+  color: gray;
+  list-style-type: none;
+  font-size: 1.2em; }
+
 /*# sourceMappingURL=main.css.map */
