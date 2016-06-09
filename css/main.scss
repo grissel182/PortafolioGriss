@@ -331,6 +331,9 @@ img {
 .mt-5{
 		margin-top: 3%;
 	}
+.mt-6{
+	margin-top: 5%;
+}
 .mt-10{
 	margin-top: 10%;
 }
@@ -377,4 +380,18 @@ footer {
 }
 .black {
 	color: black !important;
+}
+.btn-success {
+	background-color: $oscuro !important;
+	border-color: $oscuro !important;
+	&:hover, &:focus, &:active {
+		background-color: $linea !important;
+		border-color: $linea !important;
+		color: gray;
+	}
+}
+.hr {
+	width: 12%;
+	margin-left: 44%;
+	border-color: $linea;
 }
