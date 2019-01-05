@@ -227,6 +227,21 @@
 
   .navbar-brand {
     margin-top: 2em; } }
+@media screen and (min-width: 1804px) {
+  nav {
+    margin-top: -9em !important;
+    padding-top: 14em; }
+
+  .nav {
+    padding-top: 12em;
+    padding-bottom: 2em;
+    margin-top: 4em; }
+
+  .navbar-brand {
+    margin-top: 2em; }
+     .pleca-3 {
+      height: 180px !important; }
+ }
 /*//PARA LOS MODAS EN PROYECTOS*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .over .landing {
